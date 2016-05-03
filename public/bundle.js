@@ -53,9 +53,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var React = __webpack_require__(2);
-	var ReactDOM = __webpack_require__(215);
+	var ReactDOM = __webpack_require__(216);
 	var Router = __webpack_require__(159).Router;
-	var routes = __webpack_require__(216);
+	var routes = __webpack_require__(217);
 
 	ReactDOM.render(React.createElement(Router, { routes: _route_configuration2.default }), document.getElementById('app'));
 
@@ -24161,9 +24161,13 @@
 
 	var _highcharts2 = _interopRequireDefault(_highcharts);
 
-	var _options_constants = __webpack_require__(213);
+	var _chart_utility = __webpack_require__(219);
+
+	var _options_constants_ = __webpack_require__(218);
 
 	var _util = __webpack_require__(214);
+
+	var _chart_type_constants = __webpack_require__(215);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24205,8 +24209,7 @@
 	        key: 'getSplineConfig',
 	        value: function getSplineConfig() {
 	            var me = this;
-	            //console.log(me.updateDynamicInfo)
-	            return _highcharts2.default.merge(_options_constants.options.options_spline, {
+	            var myLineConfig = {
 	                title: {
 	                    text: 'Susanta'
 	                },
@@ -24216,12 +24219,19 @@
 	                    marginRight: 10,
 	                    events: {
 	                        load: function load() {
-	                            me.updateDynamicInfo(this);
+	                            var me_1 = this;
+	                            me.updateDynamicInfo(me_1);
 	                        }
 	                    }
 	                }
 
-	            });
+	            };
+	            // var fn = options();
+	            console.log((0, _chart_utility.constructChartConfigs)(_chart_type_constants.chartTypeCostants.LINE, myLineConfig));
+
+	            //return Highcharts.merge(options_1.options_spline, myLineConfig)
+
+	            return (0, _chart_utility.constructChartConfigs)(_chart_type_constants.chartTypeCostants.LINE, myLineConfig);
 	        }
 	    }, {
 	        key: 'render',
@@ -24237,27 +24247,8 @@
 	                        { className: 'row' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'col-md-6' },
+	                            { className: 'col-md-12' },
 	                            _react2.default.createElement(_Highcharts2.default, { container: 'spline', options: this.getSplineConfig() })
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'row' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'col-md-4' },
-	                            _react2.default.createElement(_Highcharts2.default, { container: 'pie', options: (0, _util.getDefaultConfig)("PIE", _options_constants.options.options_pie) })
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'col-md-4' },
-	                            _react2.default.createElement(_Highcharts2.default, { container: 'polar', options: _options_constants.options.options_polar })
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'col-md-4' },
-	                            _react2.default.createElement(_Highcharts2.default, { container: 'gauge', options: _options_constants.options.options_gauge })
 	                        )
 	                    )
 	                )
@@ -24760,7 +24751,8 @@
 
 
 /***/ },
-/* 213 */
+/* 213 */,
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24768,7 +24760,124 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.options = undefined;
+	exports.CHART_TYPE = undefined;
+	exports.getDefaultConfig = getDefaultConfig;
+
+	var _highcharts = __webpack_require__(211);
+
+	var _highcharts2 = _interopRequireDefault(_highcharts);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var CHART_TYPE = exports.CHART_TYPE = {
+	    PIE: {
+	        chart: {
+	            plotBackgroundColor: null,
+	            plotBorderWidth: null,
+	            plotShadow: false,
+	            type: 'pie'
+	        },
+	        tooltip: {
+	            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	        },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+	                    style: {
+	                        color: _highcharts2.default.theme && _highcharts2.default.theme.contrastTextColor || 'black'
+	                    }
+	                }
+	            }
+	        }
+	    }
+	};
+
+	/**
+	 * Simple function to return the merged result
+	 * @param chartType
+	 * @param options
+	 * @returns {*}
+	 */
+	/**
+	 * A simple utility class to return default utilities for different chart types
+	 */
+	function getDefaultConfig(chartType, options) {
+	    if (CHART_TYPE.hasOwnProperty(chartType)) {
+	        return Object.assign(CHART_TYPE[chartType], options);
+	    } else {
+
+	        throw new Error('Not an expected chart type');
+	    }
+	}
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.chartTypeCostants = undefined;
+
+	var _highcharts = __webpack_require__(211);
+
+	var _highcharts2 = _interopRequireDefault(_highcharts);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	/**
+	 * A simple and single constant file to have any sort of constants related to HighCharts
+	 * As we go we should add up all related highcChart constants in tehis file
+	 * @type {{LINE: string}}
+	 */
+
+	var chartTypeCostants = exports.chartTypeCostants = {
+
+	  LINE: "LINE"
+
+	}; /**
+	    * Created by spattana on 4/6/16. This is the core component to create different charts
+	    */
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(4);
+
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var Main = __webpack_require__(208);
+	var Router = __webpack_require__(159);
+	var Route = Router.Route;
+	var IndexRoute = Router.IndexRoute;
+
+	module.exports = React.createElement(Route, { path: '/', component: Main });
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.options_1 = undefined;
 
 	var _yAxis;
 
@@ -24784,7 +24893,7 @@
 
 	//different option example
 
-	var options = exports.options = {
+	var options_1 = exports.options_1 = {
 
 	    options_pie: {
 
@@ -25121,7 +25230,7 @@
 	    },
 	    options_spline: {
 	        chart: {
-	            type: 'line',
+	            //type: 'spline',
 	            animation: _highcharts2.default.svg, // don't animate in old IE
 	            marginRight: 10,
 	            events: {
@@ -25261,7 +25370,7 @@
 	};
 
 /***/ },
-/* 214 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25269,82 +25378,107 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.CHART_TYPE = undefined;
-	exports.getDefaultConfig = getDefaultConfig;
+	exports.constructChartConfigs = undefined;
 
 	var _highcharts = __webpack_require__(211);
 
 	var _highcharts2 = _interopRequireDefault(_highcharts);
 
+	var _chart_type_constants = __webpack_require__(215);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var CHART_TYPE = exports.CHART_TYPE = {
-	    PIE: {
+	/**
+	 * All the Chart abstract configs for specific type of charts.
+	 * //TODO : we can have anothe rlevel of abstraction to abstract few highchart related configs. For now let it be this way
+	 */
+	/**
+	 * Created by spattana on 4/6/16. This is the core component to create different charts
+	 */
+
+	var CHART_CONFIGS = {
+	    LINE: {
 	        chart: {
-	            plotBackgroundColor: null,
-	            plotBorderWidth: null,
-	            plotShadow: false,
-	            type: 'pie'
-	        },
-	        tooltip: {
-	            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-	        },
-	        plotOptions: {
-	            pie: {
-	                allowPointSelect: true,
-	                cursor: 'pointer',
-	                dataLabels: {
-	                    enabled: true,
-	                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-	                    style: {
-	                        color: _highcharts2.default.theme && _highcharts2.default.theme.contrastTextColor || 'black'
-	                    }
+	            //type: 'spline',
+	            animation: _highcharts2.default.svg, // don't animate in old IE
+	            marginRight: 10,
+	            events: {
+	                load: function load() {
+
+	                    // set up the updating of the chart each second
+	                    var series = this.series[0];
+	                    setInterval(function () {
+	                        var x = new Date().getTime(),
+	                            // current time
+	                        y = Math.random();
+	                        series.addPoint([x, y], true, true);
+	                    }, 1000);
 	                }
 	            }
-	        }
+	        },
+	        title: {
+	            text: 'Live random data'
+	        },
+	        xAxis: {
+	            type: 'datetime',
+	            tickPixelInterval: 150
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Value'
+	            },
+	            plotLines: [{
+	                value: 0,
+	                width: 1,
+	                color: '#808080'
+	            }]
+	        },
+	        tooltip: {
+	            formatter: function formatter() {
+	                return '<b>' + this.series.name + '</b><br/>' + _highcharts2.default.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' + _highcharts2.default.numberFormat(this.y, 2);
+	            }
+	        },
+	        legend: {
+	            enabled: false
+	        },
+	        exporting: {
+	            enabled: false
+	        },
+	        series: [{
+	            name: 'Random data',
+	            data: function () {
+	                // generate an array of random data
+	                var data = [],
+	                    time = new Date().getTime(),
+	                    i;
+
+	                for (i = -19; i <= 0; i += 1) {
+	                    data.push({
+	                        x: time + i * 1000,
+	                        y: Math.random()
+	                    });
+	                }
+	                return data;
+	            }()
+	        }]
 	    }
 	};
 
 	/**
-	 * Simple function to return the merged result
-	 * @param chartType
-	 * @param options
-	 * @returns {*}
+	 * A simple utility function that we gonna use construct the configs
+	 * @param chartType : A chart type which comes  filechart_type_constants module
+	 * @param additionalConfig : Additional config taht will be merged to the core object
+	 * @returns {*} Returns the merged object Config
 	 */
-	/**
-	 * A simple utility class to return default utilities for different chart types
-	 */
-	function getDefaultConfig(chartType, options) {
-	    if (CHART_TYPE.hasOwnProperty(chartType)) {
-	        return Object.assign(CHART_TYPE[chartType], options);
+	var constructChartConfigs = exports.constructChartConfigs = function constructChartConfigs(chartType, additionalConfig) {
+
+	    if (!chartType || !_chart_type_constants.chartTypeCostants[chartType] || !CHART_CONFIGS[chartType]) {
+	        //TODO: This strings need to be localized
+	        throw new Error(chartType + ' :The provided Chart type is not Valid');
 	    } else {
-
-	        throw new Error('Not an expected chart type');
+	        return _highcharts2.default.merge(CHART_CONFIGS[chartType], additionalConfig);
 	    }
-	}
-
-/***/ },
-/* 215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(4);
-
-
-/***/ },
-/* 216 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var Main = __webpack_require__(208);
-	var Router = __webpack_require__(159);
-	var Route = Router.Route;
-	var IndexRoute = Router.IndexRoute;
-
-	module.exports = React.createElement(Route, { path: '/', component: Main });
+	};
 
 /***/ }
 /******/ ]);

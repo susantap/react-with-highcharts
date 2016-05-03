@@ -6,7 +6,7 @@ import Highcharts from 'highcharts';
 
 //different option example
 
-export const options = {
+export const options_1 = {
     
     options_pie : {
     

@@ -5,8 +5,10 @@
 import React, {Component} from 'react';
 import Chart from './Highcharts.react';
 import Highcharts from 'highcharts';
-import {options} from './options_constants';
-import {getDefaultConfig} from '../util/util'
+import {constructChartConfigs} from './chart_utility';
+import {options_1} from './options_constants_1';
+import {getDefaultConfig} from '../util/util';
+import {chartTypeCostants} from './chart_type_constants'
 
 
 
@@ -29,8 +31,7 @@ export default class Mainlayout extends Component {
     getSplineConfig()
     {
         var me = this;
-        //console.log(me.updateDynamicInfo)
-        return Highcharts.merge(options.options_spline,{
+        const myLineConfig = {
             title: {
                 text: 'Susanta'
             },
@@ -40,38 +41,32 @@ export default class Mainlayout extends Component {
                 marginRight: 10,
                 events: {
                     load: function () {
-                        me.updateDynamicInfo(this);
+                        var me_1 = this;
+                        me.updateDynamicInfo(me_1);
 
                     }
                 }
             }
-            
-        })
+
+        };
+       // var fn = options();
+        console.log(constructChartConfigs(chartTypeCostants.LINE, myLineConfig))
+        
+        //return Highcharts.merge(options_1.options_spline, myLineConfig)
+
+       return constructChartConfigs(chartTypeCostants.LINE , myLineConfig)
     }
-
-
+    
     render() {
         return (
             <div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                             <Chart container="spline" options={this.getSplineConfig()}></Chart>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Chart container="pie" options={getDefaultConfig("PIE",options.options_pie)}></Chart>
-                        </div>
-
-                        <div className="col-md-4">
-                            <Chart container="polar" options={options.options_polar}></Chart>
-                        </div>
-                        <div className="col-md-4">
-                            <Chart container="gauge" options={options.options_gauge}></Chart>
-                        </div>
-
-                    </div>
+                    
 
                 </div>
             </div>
