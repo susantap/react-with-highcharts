@@ -351,7 +351,7 @@ export const options = {
     },
     options_spline : {
         chart: {
-            type: 'line',
+            //type: 'spline',
             animation: Highcharts.svg, // don't animate in old IE
             marginRight: 10,
             events: {
@@ -492,13 +492,6 @@ export const options = {
                 valueSuffix: ' km/h'
             }
         }]
-    },
-
-    /*
-     A utility function to append Charts
-     */
-   
+    }
 
 }
-
-
