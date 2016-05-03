@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5c8cc0-1082-4079-a123-c99e68ca7831" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/App.js" afterPath="$PROJECT_DIR$/app/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Main.js" afterPath="$PROJECT_DIR$/app/components/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/options_constants.js" afterPath="$PROJECT_DIR$/app/components/options_constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-with-highcharts.iml" afterPath="$PROJECT_DIR$/react-with-highcharts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bundle.js" afterPath="$PROJECT_DIR$/public/bundle.js" />
     </list>
     <ignored path="react-with-highcharts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="58" column="34" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="32" column="54" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#43#82#0" expanded="true" />
@@ -52,34 +50,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b_highchart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/highcharts/b_highchart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options_constants.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="options_constants.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/options_constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="351" column="4" selection-start-line="351" selection-start-column="4" selection-end-line="351" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <element signature="e#211#857#0" expanded="false" />
-                <element signature="e#316#854#0" expanded="false" />
-                <element signature="e#879#2454#0" expanded="false" />
-                <element signature="e#2477#3567#0" expanded="false" />
-                <element signature="e#3589#4714#0" expanded="false" />
-                <element signature="e#4735#6124#0" expanded="false" />
-                <element signature="e#6147#9106#0" expanded="false" />
-                <element signature="e#6164#6202#0" expanded="false" />
-                <element signature="e#11055#13002#0" expanded="false" />
-                <marker date="1462251577000" expanded="true" signature="12652:12669" placeholder="..." />
-                <marker date="1462251577000" expanded="true" signature="12684:12792" placeholder="..." />
-                <marker date="1462251577000" expanded="true" signature="12849:12876" placeholder="..." />
+                <element signature="e#186#13067#0" expanded="false" />
+                <marker date="1462257750000" expanded="true" signature="12652:12669" placeholder="..." />
+                <marker date="1462257750000" expanded="true" signature="12684:12792" placeholder="..." />
+                <marker date="1462257750000" expanded="true" signature="12849:12876" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -109,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -187,8 +167,8 @@
         <option value="$PROJECT_DIR$/app/App.js" />
         <option value="$PROJECT_DIR$/app/route_configuration.js" />
         <option value="$PROJECT_DIR$/app/components/highcharts/b_line_highcharts.js" />
-        <option value="$PROJECT_DIR$/app/components/options_constants.js" />
         <option value="$PROJECT_DIR$/app/components/Main.js" />
+        <option value="$PROJECT_DIR$/app/components/options_constants.js" />
       </list>
     </option>
   </component>
@@ -200,8 +180,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
-    <option name="y" value="24" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
@@ -277,25 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-with-highcharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-with-highcharts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,12 +726,12 @@
       <workItem from="1461437528806" duration="586000" />
       <workItem from="1461464456460" duration="832000" />
       <workItem from="1461901105169" duration="3854000" />
-      <workItem from="1462233083472" duration="9293000" />
+      <workItem from="1462233083472" duration="10558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42642000" />
+    <option name="totallyTimeSpent" value="43907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -781,8 +743,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="24" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
+    <frame x="4" y="23" width="1280" height="726" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -793,10 +755,10 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4731861" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4731861" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -832,7 +794,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4731861" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4731861" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -865,8 +827,14 @@
           <line>53</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/components/options_constants.js</url>
+          <line>8</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -876,18 +844,10 @@
         <state relative-caret-position="195">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#211#857#0" expanded="false" />
-            <element signature="e#316#854#0" expanded="false" />
-            <element signature="e#879#2454#0" expanded="false" />
-            <element signature="e#2477#3567#0" expanded="false" />
-            <element signature="e#3589#4714#0" expanded="false" />
-            <element signature="e#4735#6124#0" expanded="false" />
-            <element signature="e#6147#9106#0" expanded="false" />
-            <element signature="e#6164#6202#0" expanded="false" />
-            <element signature="e#11055#13002#0" expanded="false" />
-            <marker date="1462251577000" expanded="true" signature="12652:12669" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12684:12792" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12849:12876" placeholder="..." />
+            <element signature="e#186#13067#0" expanded="false" />
+            <marker date="1462257750000" expanded="true" signature="12652:12669" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12684:12792" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12849:12876" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -971,18 +931,10 @@
         <state relative-caret-position="195">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#211#857#0" expanded="false" />
-            <element signature="e#316#854#0" expanded="false" />
-            <element signature="e#879#2454#0" expanded="false" />
-            <element signature="e#2477#3567#0" expanded="false" />
-            <element signature="e#3589#4714#0" expanded="false" />
-            <element signature="e#4735#6124#0" expanded="false" />
-            <element signature="e#6147#9106#0" expanded="false" />
-            <element signature="e#6164#6202#0" expanded="false" />
-            <element signature="e#11055#13002#0" expanded="false" />
-            <marker date="1462251577000" expanded="true" signature="12652:12669" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12684:12792" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12849:12876" placeholder="..." />
+            <element signature="e#186#13067#0" expanded="false" />
+            <marker date="1462257750000" expanded="true" signature="12652:12669" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12684:12792" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12849:12876" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1066,18 +1018,10 @@
         <state relative-caret-position="30">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding>
-            <element signature="e#211#857#0" expanded="false" />
-            <element signature="e#316#854#0" expanded="false" />
-            <element signature="e#879#2454#0" expanded="false" />
-            <element signature="e#2477#3567#0" expanded="false" />
-            <element signature="e#3589#4714#0" expanded="false" />
-            <element signature="e#4735#6124#0" expanded="false" />
-            <element signature="e#6147#9106#0" expanded="false" />
-            <element signature="e#6164#6202#0" expanded="false" />
-            <element signature="e#11055#13002#0" expanded="false" />
-            <marker date="1462251577000" expanded="true" signature="12652:12669" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12684:12792" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12849:12876" placeholder="..." />
+            <element signature="e#186#13067#0" expanded="false" />
+            <marker date="1462257750000" expanded="true" signature="12652:12669" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12684:12792" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12849:12876" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1216,10 +1160,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#71#0" expanded="false" />
-            <element signature="e#2902#4608#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,14 +1180,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/util/util.js">
+    <entry file="file://$PROJECT_DIR$/app/components/Highcharts.react.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="540">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#162#880#0" expanded="false" />
+            <element signature="e#97#123#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/highcharts/b_highchart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,23 +1218,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/options_constants.js">
+    <entry file="file://$PROJECT_DIR$/app/util/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="351" column="4" selection-start-line="351" selection-start-column="4" selection-end-line="351" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="32" />
           <folding>
-            <element signature="e#211#857#0" expanded="false" />
-            <element signature="e#316#854#0" expanded="false" />
-            <element signature="e#879#2454#0" expanded="false" />
-            <element signature="e#2477#3567#0" expanded="false" />
-            <element signature="e#3589#4714#0" expanded="false" />
-            <element signature="e#4735#6124#0" expanded="false" />
-            <element signature="e#6147#9106#0" expanded="false" />
-            <element signature="e#6164#6202#0" expanded="false" />
-            <element signature="e#11055#13002#0" expanded="false" />
-            <marker date="1462251577000" expanded="true" signature="12652:12669" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12684:12792" placeholder="..." />
-            <marker date="1462251577000" expanded="true" signature="12849:12876" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#162#880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1291,28 +1237,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/highcharts/b_highchart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/Highcharts.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#97#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="34" />
+        <state relative-caret-position="105">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="54" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#82#0" expanded="true" />
@@ -1320,11 +1248,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/app/components/options_constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#186#13067#0" expanded="false" />
+            <marker date="1462257750000" expanded="true" signature="12652:12669" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12684:12792" placeholder="..." />
+            <marker date="1462257750000" expanded="true" signature="12849:12876" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ import Chart from './Highcharts.react';
 import Highcharts from 'highcharts';
 import {options} from './options_constants';
 import {getDefaultConfig} from '../util/util'
-import HighchartsContent from './highcharts/b_line_highcharts';
+
 
 
 export default class Mainlayout extends Component {
